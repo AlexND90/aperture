@@ -26,13 +26,13 @@ module.exports = {
         dest: pathDest + "/js"
     },
     img: {
-        src: pathSrc + "/img/*.{png,jpg,jpeg,gif,svg}",
+        src: pathSrc + "/img/**/*.{png,jpg,jpeg,gif,svg}",
         watch: pathSrc + "/img/**/*.{png,jpg,jpeg,gif,svg}",
         dest: pathDest + "/img"
     },
     font: {
-        src: pathSrc + "/font/*.{eot,ttf,otf,otc,ttc,woff,woff2,svg}",
-        watch: pathSrc + "/font/**/*.{eot,ttf,otf,otc,ttc,woff,woff2,svg}",
+        src: pathSrc + "/font/*.{eot,woff,woff2,svg}",
+        watch: pathSrc + "/font/**/*.{ttf,eot,woff,woff2,svg}",
         dest: pathDest + "/font"
     }
 }

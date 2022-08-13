@@ -1,3 +1,7 @@
-const sum = require("./module/sum.js");
-console.log(sum(10, 8));
-console.log(sum(5, 8));
+const burger = document.querySelector(".burger");
+const nav = document.querySelector(".nav");
+
+burger.addEventListener('click', () =>{
+    burger.classList.toggle("burger_active");
+    nav.classList.toggle("nav_open");
+})
