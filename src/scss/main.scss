@@ -1,5 +1,13 @@
+.conteiner {
+    max-width: 1186px;
+    width: 100%; 
+    margin: 0 auto; 
+    padding: 0 10px;
+}
+
 @import "block/settings.scss";
 @import "block/header.scss";
+@import "block/footer.scss";
 @import "block/fonts.scss";
 @import "block/animation.scss";
 img {
@@ -31,11 +39,17 @@ body {
         font-size: 28px;
     }
 }
+.title_h3 {
+    font-size: 14px;
+    color: #C0C0C0;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
 .title__decor {
     color: #C0C0C0;
     font-size: 14px;
     letter-spacing: 2px;
-}
+} 
 //button======================================================================
 
 .btn {
@@ -78,12 +92,7 @@ body {
     }
 }
 //============================================================================
-.conteiner {
-    max-width: 1186px;
-    width: 100%; 
-    margin: 0 auto; 
-    padding: 0 10px;
-}
+
 //studios======================================================================
 .studios {
     position: relative;
@@ -153,8 +162,7 @@ body {
 }
 //do========================================================================
 .areas__btn {
-    display: inline-block;
-    max-width: 140px;
+    align-self: start;
     position: relative;
     z-index: 2;
 }
@@ -250,10 +258,6 @@ body {
     margin: 0;
     margin-bottom: 10px;
 }
-.title_h3 {
-    letter-spacing: 2px;
-    text-transform: uppercase;
-}
 .areas__text {
     position: relative;
     z-index: 2;
@@ -286,6 +290,10 @@ body {
     z-index: 2;
     margin-right: 50px;
     max-width: 300px;
+    @media (max-width: 768px){
+        margin-right: 0px; 
+        padding: 20px;
+    }
 }
 .snapshot__title {
     font-size: 14px;
@@ -294,6 +302,9 @@ body {
     margin: 0;
     margin-bottom: 8px;
     text-align: left;
+    @media (max-width: 768px){
+        font-size: 14px;
+    }
 }
 .snapshot__text {
     margin: 0;
@@ -337,7 +348,7 @@ body {
     }
 }
 .tools__btn {
-    max-width: 145px;
+    align-self: start;
 }
 .tools__snapshot {
     flex: 1 1 50%;
@@ -403,4 +414,34 @@ body {
 .clients__item {
     margin-bottom: 30px;
     padding: 5px;
+}
+//proposal================================================================
+.proposal {
+    background-color: #000;
+}
+.conteiner {
+}
+.proposal__conteiner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 120px 15px 100px 15px;
+    @media (max-width: 768px) {
+        padding: 90px 15px 50px 15px;
+    }
+}
+.proposal__title {
+    margin: 0;
+    margin-bottom: 15px;
+    text-align: center;
+    max-width: 530px;
+}
+.proposal__text {
+    text-align: center;
+    margin: 0;
+    margin-bottom: 12px;
+}
+.proposal__btn {
+    align-self: center;
+    margin-bottom: 15px;
 }
