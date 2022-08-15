@@ -344,7 +344,8 @@ body {
     }
     @media (max-width: 768px){
         flex: 1 1 100%;
-        min-height: 540px;
+        min-height: 400px;
+        padding: 30px 15px;
     }
 }
 .tools__btn {
